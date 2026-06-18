@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 1.0,
-          "corner_smoothing": 1,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -946,7 +946,7 @@
         "uuid": "a123a8db-a151-4387-aa00-5e9926b56231"
       }
     ],
-    "used_designators": "R2-23,#FLG2-5,L2,D2-14,T2-3,#PWR2,#PWR7-18,#PWR20-56,BUT2,LED2,C2-7,LED_1_DI/CI2,LED_DI/CI2-3,LED_1_DO/CO2,LED_2_DI/CI2,LED_2_DO/CO2,pUEXT2,RST2,U2-4,USB\\-OTG2,USB\\-UART2,LED_DO/CO2-3",
+    "used_designators": "IC2,R2-18,#FLG2-5,L2-3,D2-13,C_BOOT2,#PWR2,#PWR7-18,#PWR20-58,BUT2,C2-21,LED2,LED_DI/CI2-3,LED_DO/CO2-3,RST2,U2-4,USB\\-OTG2",
     "variants": []
   },
   "sheets": [
@@ -957,10 +957,6 @@
     [
       "ed65724d-61f9-4126-9748-bbd200a4041d",
       "TOP"
-    ],
-    [
-      "9ef99247-6158-429c-8a85-d5778f1bc702",
-      "POWER"
     ],
     [
       "dc69146b-635f-4efb-8339-376b542fca2a",

@@ -1170,53 +1170,7 @@
 		)
 	)
 	(sheet
-		(at 114.3 33.02)
-		(size 35.56 13.97)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 255 0 1)
-		)
-		(uuid "9ef99247-6158-429c-8a85-d5778f1bc702")
-		(property "Sheetname" "POWER"
-			(at 114.3 32.3084 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "POWER.kicad_sch"
-			(at 114.3 47.5746 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "rover_bms_ble_controller_hw"
-				(path "/a123a8db-a151-4387-aa00-5e9926b56231/ed65724d-61f9-4126-9748-bbd200a4041d"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 114.3 55.88)
+		(at 99.06 22.86)
 		(size 35.56 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1232,7 +1186,7 @@
 		)
 		(uuid "dc69146b-635f-4efb-8339-376b542fca2a")
 		(property "Sheetname" "MCU&LEDS"
-			(at 114.3 55.1684 0)
+			(at 99.06 22.1484 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects
@@ -1243,7 +1197,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU&LEDS.kicad_sch"
-			(at 114.3 70.4346 0)
+			(at 99.06 37.4146 0)
 			(show_name yes)
 			(do_not_autoplace no)
 			(effects

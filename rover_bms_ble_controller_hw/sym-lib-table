@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ESP32-S3-DevKit-LiPo_Rev_B") (type "Legacy") (uri "${KICAD_OLIMEX_ESP32_LIB}/Libs/ESP32-S3-DevKit-LiPo_Rev_B.lib") (options "") (descr ""))
+	(lib (name "TXS0108E") (type "Legacy") (uri "${KICAD_OLIMEX_ESP32_LIB}/Libs/TXS0108E.lib") (options "") (descr ""))
+	(lib (name "LMR51450SDRRR") (type "KiCad") (uri "${KICAD_OLIMEX_ESP32_LIB}/Libs/LMR51450SDRRR.kicad_sym") (options "") (descr ""))
+)
