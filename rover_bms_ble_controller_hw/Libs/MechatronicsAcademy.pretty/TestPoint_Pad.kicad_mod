@@ -1,0 +1,109 @@
+(footprint "TestPoint_Pad"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SMD rectangular pad as test Point, square 1.5mm side length")
+	(tags "test point SMD pad rectangle square")
+	(property "Reference" "J10"
+		(at 0 -1.648 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "26b1e70f-fe5a-4cf2-8923-65091683b459")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DI_IN"
+		(at 0 1.75 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "19f11a8d-f32a-4392-9604-cba5c874d55c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcab6ecd-6676-4f26-b172-6e24b9d47621")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Generic connector, single row, 01x01, script generated"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd384dfe-4980-4ac3-8b16-e6ce2531e636")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Connector*:*_1x??_*")
+	(sheetname "/TOP/MCU&LEDS/")
+	(sheetfile "MCU&LEDS.kicad_sch")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.25 -1)
+		(end -1.25 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3728108b-9526-4c10-a393-2e6a281f8a82")
+	)
+	(fp_line
+		(start -1.25 -1)
+		(end 1.25 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5c319434-d485-4f8b-b81a-83238eb3adff")
+	)
+	(fp_line
+		(start 1.25 1)
+		(end -1.25 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f9efde05-282e-4ce2-8fb0-b2be7ccacb61")
+	)
+	(fp_line
+		(start 1.25 1)
+		(end 1.25 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "46f14b31-7194-4888-88c7-ca7af9f58e83")
+	)
+	(pad "1" smd oval
+		(at 0 0)
+		(size 2.5 1.5)
+		(layers "F.Cu" "F.Mask")
+		(uuid "f0418ce1-50ad-4bb2-9a9b-4ba63f46e35b")
+	)
+	(embedded_fonts no)
+)

@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 3.0,
+          "width": 1.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.4,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 3,
@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -78,7 +84,7 @@
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "error",
+        "copper_edge_clearance": "warning",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
@@ -156,7 +162,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -203,7 +209,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.15
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +239,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -803,6 +817,10 @@
       {
         "netclass": "Default",
         "pattern": "VBAT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "MAIN_BUS"
       }
     ]
   },
@@ -811,7 +829,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -826,7 +844,7 @@
       "method": 0,
       "sort_order": 1
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "bom\\rover_bms_ble_controller_hw.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -863,19 +881,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -887,17 +905,159 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field42",
+          "name": "Field42",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field42_1",
+          "name": "Field42_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field42_2",
+          "name": "Field42_2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field42_3",
+          "name": "Field42_3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field42_4",
+          "name": "Field42_4",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Fieldname 1",
+          "name": "Fieldname 1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Fieldname2",
+          "name": "Fieldname2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Fieldname3",
+          "name": "Fieldname3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB / LCSC Part #",
+          "name": "JLCPCB",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "{MAIN_BUS}": [
+        "/TOP/MCU&LEDS/GPIO(0\\BUT1|1|2|3|4|5\\PWR_SENS|6\\BAT_SENS|7|8|9|10\\FSPICS0(SPI3_CS0)|11\\FSPID(SPI3_MOSI)|12\\FSPICLK(SPI3_CLK)|13\\FSPIQ(SPI3_MISO)|14|15|16|17\\U1TXD|18\\U1RXD|19\\USB_D-|20\\USB_D+|21|35|36|37|38\\LED1|39|40|41|42|43\\U0TXD|44\\U0RXD|45|46|47\\I2C_SCL|48\\I2C_SDA)"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -946,7 +1106,7 @@
         "uuid": "a123a8db-a151-4387-aa00-5e9926b56231"
       }
     ],
-    "used_designators": "IC2,R2-18,#FLG2-5,L2-3,D2-13,C_BOOT2,#PWR2,#PWR7-18,#PWR20-58,BUT2,C2-21,LED2,LED_DI/CI2-3,LED_DO/CO2-3,RST2,U2-4,USB\\-OTG2",
+    "used_designators": "IC2,R2-15,#FLG2-5,J2-17,L2-3,D2-12,#PWR2,#PWR7-18,#PWR20-57,BUT2,C2-22,RST2,U2-4,USB\\-C2",
     "variants": []
   },
   "sheets": [
