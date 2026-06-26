@@ -503,7 +503,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "rover_bms_ble_controller_hw.kicad_pro",
+    "filename": "rover_led_udp_controller_hw.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1101,18 +1101,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "rover_bms_ble_controller_hw.kicad_sch",
-        "name": "rover_bms_ble_controller_hw",
+        "filename": "rover_led_udp_controller_hw.kicad_sch",
+        "name": "rover_led_udp_controller_hw",
         "uuid": "a123a8db-a151-4387-aa00-5e9926b56231"
       }
     ],
-    "used_designators": "IC2,R2-15,#FLG2-5,J2-17,L2-3,D2-12,#PWR2,#PWR7-18,#PWR20-57,BUT2,C2-22,RST2,U2-4,USB\\-C2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "a123a8db-a151-4387-aa00-5e9926b56231",
-      "rover_bms_ble_controller_hw"
+      "rover_led_udp_controller_hw"
     ],
     [
       "ed65724d-61f9-4126-9748-bbd200a4041d",

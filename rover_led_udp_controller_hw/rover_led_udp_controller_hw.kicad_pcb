@@ -10089,7 +10089,7 @@
 			(uuid "89be91f4-d526-41af-9780-e1c6f4f29f5d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_OLIMEX_ESP32_LIB}/3d/YTS-A016-X(SKRPABE010).stp"
+		(model "${KIPRJMOD}/3d/YTS-A016-X(SKRPABE010).stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15359,7 +15359,7 @@
 			(uuid "66e4230e-819d-4328-a755-a619bbbe4e95")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_OLIMEX_ESP32_LIB}/3d/YTS-A016-X(SKRPABE010).stp"
+		(model "${KIPRJMOD}/3d/YTS-A016-X(SKRPABE010).stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17459,7 +17459,7 @@
 			(uuid "a0593ee4-7b6f-4c30-be23-a995e02b6ff8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_OLIMEX_ESP32_LIB}/3d/ESP32-S3-WROOM.step"
+		(model "${KIPRJMOD}/3d/ESP32-S3-WROOM.step"
 			(offset
 				(xyz 0 0 0)
 			)
